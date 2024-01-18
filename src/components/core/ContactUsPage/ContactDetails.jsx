@@ -14,7 +14,7 @@ const contactDetails = [
     icon: "BiWorld",
     heading: "Visit us",
     description: "Come and say hello at my LinkedIn.",
-    details: "Harsh Sindhu",
+    details: "Yashwant Saste",
   },
   {
     icon: "IoCall",
@@ -53,8 +53,8 @@ const ContactDetails = () => {
           <h1 className="text-lg font-semibold text-richblack-5">
             <a
               className="font-medium text-yellow-100"
-              href="https://drive.google.com/file/d/1lf09Hmro15Vsq6wa-ddgbPwKWsBBZIsG/view"
-              download="https://drive.google.com/file/d/1lf09Hmro15Vsq6wa-ddgbPwKWsBBZIsG/view"
+              href="https://drive.google.com/file/d/1pnSfRaUksOyKQGbv9pKwLaFrUc67B8Ec/view"
+              download="https://drive.google.com/file/d/1pnSfRaUksOyKQGbv9pKwLaFrUc67B8Ec/view"
             >
               Download My Resume
             </a>
