@@ -168,6 +168,17 @@ const VideoDetails = () => {
     setLoading(false)
   }
 
+  useEffect(()=>{
+    const disableRightClick=(event)=>{
+      event.preventDefault();
+    }
+    document.addEventListener('contextmenu',disableRightClick);
+
+    return () =>{
+      document.addEventListener('contextmenu',disableRightClick)
+    }
+  },[])
+
   return (
     <div className="flex flex-col gap-5 text-white">
       {!videoData ? (
@@ -240,7 +251,9 @@ const VideoDetails = () => {
       )}
 
       <h1 className="mt-4 text-3xl font-semibold">{videoData?.title}</h1>
-      <p className="pt-2 pb-6">{videoData?.description}</p>
+      {
+        videoData?.description === "undefined" ? (<p className="pt-2 pb-6">No description provided</p>) : (<p className="pt-2 pb-6">{videoData?.description}</p>)
+      }
     </div>
   )
 }
